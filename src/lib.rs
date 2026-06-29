@@ -19,7 +19,7 @@ impl Plugin for InfiniteGridPlugin {
 #[derive(Component, Default)]
 pub struct InfiniteGrid;
 
-#[derive(Component, Copy, Clone)]
+#[derive(Component, Copy, Clone, Reflect)]
 #[require(VisibilityClass)]
 #[component(on_add = visibility::add_visibility_class::<InfiniteGridSettings>)]
 pub struct InfiniteGridSettings {
